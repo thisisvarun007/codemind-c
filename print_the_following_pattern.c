@@ -4,21 +4,24 @@ int main()
     int a;
     scanf("%d",&a);
     int i,j;
-    for (i=0; i<a; i++)
+    for (i=1; i<=a; i++)
     {
-        for (j=0; j<a; j++)
+        for (j=1; j<=a; j++)
         {
-            if (i==j || i+j==a-1)
-            {
-                printf("x");
-            }
-            else
+            if (i==j)
             {
                 printf("0");
             }
-        }
-        printf("
+            else
+            {
+                printf("x");
+            }
+            if (j==a)
+            {
+                printf("
 ");
+            }
+        }
     }
     return 0;
 }
