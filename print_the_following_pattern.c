@@ -4,22 +4,18 @@ int main()
     int a;
     scanf("%d",&a);
     int i,j;
-    for (i=1; i<=a; i++)
+    if (a>=1 && a<=10000)
     {
-        for (j=1; j<=a; j++)
+        for (i=1; i<=a; i++)
         {
-            if (i==j)
+            for (j=a; j>=1; j--)
             {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
-            if (j==a)
-            {
-                printf("
+                printf("%d ",j);
+                if (j==1)
+                {
+                    printf("
 ");
+                }
             }
         }
     }
