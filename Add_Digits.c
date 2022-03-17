@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<math.h>
-int add_dig(int x)
+int happy(int x)
 {
-	int sum=0,r,res;
+	int sum=0,r;
 	while (1>0)
 	{
 		sum=0;
@@ -28,7 +27,7 @@ int main()
 {
 	int a,res;
 	scanf("%d",&a);
-	res=add_dig(a);
+	res=happy(a);
 	printf("%d",res);
 	return 0;
 }
