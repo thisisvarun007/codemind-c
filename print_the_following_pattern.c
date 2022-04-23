@@ -6,16 +6,13 @@ int main()
     int i,j;
     for (i=0; i<a; i++)
     {
-        for (j=0; j<a; j++)
+        for (j=0; j<a-(i+1); j++)
         {
-            if ((i==j) || (j==0) || (j==a-1))
-            {
-                printf("* ");
-            }
-            else
-            {
-                printf("  ");
-            }
+            printf(" ");
+        }
+        for (j=0; j<i*2+1; j++)
+        {
+            printf("%d",i+1);
         }
         printf("
 ");
